@@ -1,0 +1,10 @@
+<h1>My Wish List</h1>
+{% if wish_list_books %}
+    <ul>
+        {% for book in wish_list_books %}
+            <li>{{ book.title }} by {{ book.author }}</li>
+        {% endfor %}
+    </ul>
+{% else %}
+    <p>Your wish list is empty.</p>
+{% endif %}
